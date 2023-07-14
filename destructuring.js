@@ -1,12 +1,10 @@
-
-
 const dog = {
-    name: 'fido',
-    age: 4,
-    bark() {
-        console.log('woof');
-    }
-}
+  name: "fido",
+  age: 4,
+  bark() {
+    console.log("woof");
+  },
+};
 
 // // method 1
 // const name = dog.name;
@@ -18,12 +16,11 @@ const dog = {
 // console.log(age);
 
 // method 2.5
-const { name: fullname, age} = dog; // here we change name to fullname
+const { name: fullname, age } = dog; // here we change name to fullname
 console.log(fullname);
 console.log(age);
 
-
-const arr = ['foo', 'bar', 'baz'];
-const [a,,c] = arr; // position matters
+const arr = ["foo", "bar", "baz"];
+const [a, , c] = arr; // position matters
 console.log(a);
 console.log(c);
