@@ -7,3 +7,5 @@ console.log(foo); // bar
 
 const loo = 0 ?? "bar";
 console.log(loo); // 0
+
+// notice that js has a very strange list of what it thinks as truthy and falsy.
