@@ -1,0 +1,16 @@
+{
+  "name": "firebase-modern",
+  "version": "1.0.0",
+  "description": "repo for the fireship course https://fireship.io/courses/js/",
+  "main": "adv_1_destructuring.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^0.33.0"
+  }
+}

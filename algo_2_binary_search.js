@@ -5,7 +5,7 @@
 
 const range = [...Array(100).keys()];
 
-function binarySearch(arr, target) {
+export function binarySearch(arr, target) {
   let left = 0;
   let right = arr.length - 1;
   let mid = 0;

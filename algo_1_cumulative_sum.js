@@ -16,3 +16,7 @@ for (let i = 0; i < range.length; i++) {
   result2 += range[i];
 }
 console.log(result2);
+
+export function cumSum(arr) {
+  return arr.reduce((accumulator, curVal) => (accumulator += curVal), 0);
+}
