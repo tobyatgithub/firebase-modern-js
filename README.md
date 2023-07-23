@@ -35,3 +35,5 @@ cd jscourse-tmp
 npm install
 npm run dev
 ```
+
+> ps - the "RESTful APIs" is a good video for basic interview level RESTful knowledge
