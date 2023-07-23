@@ -4,6 +4,7 @@ dotenv.config();
 import { Configuration, OpenAIApi } from "openai";
 const configuration = new Configuration({ apiKey: process.env.OPENAI });
 const openai = new OpenAIApi(configuration);
+// console.log("key = ", process.env.OPENAI);
 
 import express from "express";
 import cors from "cors"; // cross-origin resource sharing
@@ -17,7 +18,7 @@ app.post("/dream", async (req, res) => {
   const aiResponse = await openai.createImage({
     prompt,
     n: 1,
-    size: "1024x1024",
+    size: "512x512",
   });
 
   const image = aiResponse.data.data[0].url;
