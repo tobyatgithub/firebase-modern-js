@@ -17,10 +17,16 @@ form.addEventListener("submit", async (e) => {
     }),
   });
 
-  const { image } = await response.json();
-  const result = document.querySelector("#result");
-  hideSpinner();
-  result.innerHTML = `<img src="${image}" width="512 />`;
+  if (response.ok) {
+    const { image } = await response.json();
+    const result = document.querySelector("#result");
+    hideSpinner();
+    result.innerHTML = `<img src="${image}" width="512 />`;
+  } else {
+    const err = await response.text();
+    alert(err);
+    console.error(err);
+  }
 });
 
 function showSpinner() {
