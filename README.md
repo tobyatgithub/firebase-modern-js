@@ -37,3 +37,8 @@ npm run dev
 ```
 
 > ps - the "RESTful APIs" is a good video for basic interview level RESTful knowledge
+
+3. notice the openAI api doesn't work yet.
+
+7-24-2023: 
+Wrap up. Frontend working, api doesnt work yet. 
